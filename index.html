@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dikshya Mohanty · AI Researcher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="noise"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">DM</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/research.html">Research</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/experience.html">Experience</a></li>
+                <li><a href="pages/publications.html">Publications</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/hobbies.html">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <div class="container">
+        <header>
+            <div style="display: flex; align-items: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+                <img src="files/1593567892057.jpeg" alt="Dikshya Mohanty" style="width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); flex-shrink: 0; box-shadow: 4px 4px 0 var(--accent-dim);">
+                <div>
+                    <div class="glitch-wrapper">
+                        <h1>
+                            <span class="name-first">Dikshya</span>
+                            <span class="name-last">Mohanty</span>
+                        </h1>
+                    </div>
+                    <p class="tagline" style="margin: 0;">PhD Candidate · Computer Science · Stony Brook University</p>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://scholar.google.com/citations?user=QTG_vlMAAAAJ&hl=en" class="link-item" target="_blank">
+                    <span>🎓</span> Google Scholar
+                </a>
+                <a href="https://www.semanticscholar.org/author/Dikshya-Mohanty/2406478944" class="link-item" target="_blank">
+                    <span>📖</span> Semantic Scholar
+                </a>
+                <a href="https://x.com/dimohanty" class="link-item" target="_blank">
+                    <span>𝕏</span> Twitter
+                </a>
+                <a href="https://linkedin.com/in/dikshyam" class="link-item" target="_blank">
+                    <span>💼</span> LinkedIn
+                </a>
+                <a href="https://github.com/dikshyam" class="link-item" target="_blank">
+                    <span>⚡</span> GitHub
+                </a>
+                <div class="link-dropdown">
+                    <button class="link-item link-dropdown-toggle">
+                        <span>📄</span> CV / Resume <span class="link-dropdown-arrow">▾</span>
+                    </button>
+                    <div class="link-dropdown-menu">
+                        <a href="files/DikshyaMohanty_IndustryResume.pdf" download class="link-dropdown-item">
+                            <span>📋</span> Resume (1-page)
+                        </a>
+                        <a href="files/DikshyaMohanty_AcademicCV.pdf" download class="link-dropdown-item">
+                            <span>📜</span> Academic CV
+                        </a>
+                    </div>
+                </div>
+                <a href="/cdn-cgi/l/email-protection#24404d494b4c454a505d6447570a57504b4a5d46564b4b4f0a414051" class="link-item">
+                    <span>✉</span> Email
+                </a>
+            </div>
+
+            <div style="background: linear-gradient(135deg, rgba(184, 169, 212, 0.25) 0%, rgba(212, 197, 240, 0.25) 100%); border: 3px solid var(--accent); border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 2rem; animation: fadeInUp 1s ease-out 1s backwards; box-shadow: 4px 4px 0 var(--accent-dim);">
+                <p style="margin: 0; font-family: var(--mono); font-size: 1rem; color: var(--text); font-weight: 600;">
+                    <strong style="color: var(--accent); font-size: 1.1rem;">🔍 Currently seeking:</strong> Research internships for Summer 2026 (industry/research labs)
+                </p>
+            </div>
+
+            <p class="intro">
+                I am a PhD candidate at Stony Brook University, advised by
+                <a href="https://www3.cs.stonybrook.edu/~niranjan/" target="_blank" class="text-link">Niranjan Balasubramanian</a>.
+                My research focuses on <em>large language models</em>, <em>retrieval-augmented generation</em>,
+                <em>alignment</em>, and <em>evaluation</em>—with particular interest in LLM agents, efficient ML systems,
+                and compositional reasoning for real-world applications.
+                Before my PhD, I spent 4+ years at EY as a Lead Data Scientist, building production ML systems
+                for enterprise clients. I hold an MS in Data Science from UNC Charlotte and a BTech in Computer
+                Science from IGIT Sarang.
+            </p>
+        </header>
+
+        <div class="content">
+            <section id="publications">
+                <h2>Publications</h2>
+                <p class="descriptive-text-large" style="margin-bottom: 3rem;">
+                    My research spans large language models, multilingual NLP, evaluation, and applications
+                    in scientific domains. All preprints are available on arXiv.
+                </p>
+
+                <h3 style="font-family: var(--mono); font-size: 1.1rem; color: var(--accent); margin-top: 3rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Published</h3>
+
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            A Longitudinal, Multinational, and Multilingual Corpus of News Coverage of
+                            the Russo-Ukrainian War
+                        </div>
+                        <div class="pub-authors">Dikshya Mohanty, et al.</div>
+                        <div class="pub-venue">LREC 2026</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            We present DNIPRO, a novel longitudinal, multinational, and multilingual corpus
+                            containing 246K+ news articles covering the Russo-Ukrainian War. The dataset enables
+                            analysis of how geopolitical narratives evolve over time and differ across national
+                            and linguistic boundaries, providing insights into information dynamics and framing
+                            strategies.
+                        </p>
+                        <a href="https://lrec.elra.info/lrec2026-main-512" class="pub-link" target="_blank">
+                            LREC 2026 →
+                        </a>
+                        <a href="https://arxiv.org/abs/2601.16309" class="pub-link" target="_blank" style="margin-left: 1rem;">
+                            arXiv:2601.16309 →
+                        </a>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Addressing the Ecological Fallacy in Larger LLMs with the Author's Context
+                        </div>
+                        <div class="pub-authors">
+                            Nikita Soni, Dhruv Vijay Kunjadiya, Pratham Piyush Shah, Dikshya Mohanty,
+                            H. Andrew Schwartz, Niranjan Balasubramanian
+                        </div>
+                        <div class="pub-venue">To appear at CoNLL 2026</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            Investigating how incorporating author-level context can address ecological fallacy
+                            issues in large language models, particularly when models are trained on aggregate-level
+                            data but used to make individual-level predictions.
+                        </p>
+                        <a href="https://arxiv.org/abs/2603.05928" class="pub-link" target="_blank">
+                            arXiv:2603.05928 →
+                        </a>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Big Data and Omics Technology in Fisheries Biology: New Approaches and
+                            Changing Perspectives
+                        </div>
+                        <div class="pub-authors">Bimal Prasanna Mohanty, Dikshya Mohanty, et al.</div>
+                        <div class="pub-venue">Book Chapter, 2020</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            A comprehensive overview of how big data and omics technologies are transforming
+                            fisheries biology, covering new computational approaches and their impact on
+                            understanding aquatic ecosystems.
+                        </p>
+                        <a href="https://www.researchgate.net/profile/Bimal-Mohanty/publication/346953816_Big_Data_Science_and_Omics_Technology/links/5fd38ffaa6fdccdcb8baf0d1/Big-Data-Science-and-Omics-Technology.pdf" class="pub-link" target="_blank">
+                            ResearchGate →
+                        </a>
+                    </div>
+                </div>
+
+                <h3 style="font-family: var(--mono); font-size: 1.1rem; color: var(--accent); margin-top: 4rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">Under Review</h3>
+
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Teaching and Evaluating LLMs to Reason About Polymer Design Related Tasks
+                        </div>
+                        <div class="pub-authors">Dikshya Mohanty, et al.</div>
+                        <div class="pub-venue">Under Review at ACL Rolling Review May 2026 Cycle</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            We introduce PolyBench, a comprehensive benchmark with 125K+ tasks for evaluating
+                            compositional reasoning in polymer design and synthesis. The benchmark includes
+                            knowledge-augmented reasoning traces and diagnostic evaluations that reveal specific
+                            skill gaps in how LLMs handle multi-constraint reasoning problems. Our analysis
+                            provides insights into improving LLM capabilities for scientific applications.
+                        </p>
+                        <a href="https://arxiv.org/abs/2601.16312" class="pub-link" target="_blank">
+                            arXiv:2601.16312 →
+                        </a>
+                    </div>
+                </div>
+
+                <h3 style="font-family: var(--mono); font-size: 1.1rem; color: var(--accent); margin-top: 4rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 0.1em;">In Preparation</h3>
+
+                <div class="pub-list">
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Measuring Novelty and Diversity in LLM Reasoning for Polymer Design
+                        </div>
+                        <div class="pub-authors">Dikshya Mohanty, Niranjan Balasubramanian</div>
+                        <div class="pub-venue">In Preparation</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            How do composite reward signals — combining validity, novelty, and diversity — shape LLM post-training on open-ended polymer design tasks, and what does this reveal about building models capable of generating scientifically feasible hypotheses under competing objectives?
+                        </p>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Benchmarking Human-Context-aware Large Language Models
+                        </div>
+                        <div class="pub-authors">
+                            Nikita Soni, Dhruv Vijay Kunjadiya, Pratham Piyush Shah, Dikshya Mohanty,
+                            H. Andrew Schwartz, Niranjan Balasubramanian
+                        </div>
+                        <div class="pub-venue">In Preparation</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            Developing benchmarks to evaluate how well large language models can incorporate and
+                            reason about human context, including individual differences, cultural backgrounds,
+                            and personal characteristics in their responses.
+                        </p>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            LHLC: Large Human Language Data Corpus
+                        </div>
+                        <div class="pub-authors">
+                            Nikita Soni, Dhruv Vijay Kunjadiya, Pratham Piyush Shah, Dikshya Mohanty,
+                            H. Andrew Schwartz, Niranjan Balasubramanian
+                        </div>
+                        <div class="pub-venue">Technical Report To Be Submitted</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            A large-scale corpus of human language data designed to support research on
+                            human-context-aware language models and individual-level language understanding.
+                        </p>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Discovering the Language Factor: A Basic Human Trait Rooted in Language
+                        </div>
+                        <div class="pub-authors">August Nilsson, Dikshya Mohanty, et al.</div>
+                        <div class="pub-venue">In Preparation</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            Exploring fundamental human traits that can be identified and measured through
+                            language patterns, combining computational linguistics with psychometric analysis
+                            to discover language-based factors.
+                        </p>
+                    </div>
+
+                    <div class="pub-item">
+                        <div class="pub-title">
+                            Benchmarking LLMs on Extraction of Battery Electrolytes Properties from Literature
+                        </div>
+                        <div class="pub-authors">
+                            Manoj Praveen Nandigama, Kuldeepsinh Raj, Dikshya Mohanty, et al.
+                        </div>
+                        <div class="pub-venue">In Preparation</div>
+                        <p style="color: var(--text); margin-top: 1rem; font-size: 0.95rem; line-height: 1.6;">
+                            Developing benchmarks for evaluating how well LLMs can extract structured information
+                            about battery electrolyte properties from scientific literature, with applications
+                            to materials science research acceleration.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+                <p class="descriptive-text-large" style="margin-bottom: 3rem;">
+                    My journey through academia and industry has shaped how I approach research—balancing
+                    theoretical rigor with practical impact.
+                </p>
+
+                <div class="experience-list">
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Research Assistant</div>
+                                <div class="exp-company">Stony Brook University</div>
+                            </div>
+                            <div class="exp-date">Aug 2024 – Present</div>
+                        </div>
+                        <p class="exp-desc">
+                            Conducting research on large language models with a focus on compositional reasoning,
+                            retrieval-augmented generation, and evaluation. Working on developing benchmarks and
+                            techniques to improve LLM capabilities in scientific domains. Collaborating with
+                            interdisciplinary teams on projects funded by DARPA and NSF.
+                        </p>
+                        <p class="exp-desc" style="margin-top: 1rem;">
+                            <strong>Key achievements:</strong> Two papers under review at top-tier venues (ACL, LREC),
+                            contributor to DARPA SciFy program, recipient of SUNY RF Academic Fellowship.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Manager / Lead Data Scientist</div>
+                                <div class="exp-company">Ernst & Young LLP (EY)</div>
+                            </div>
+                            <div class="exp-date">Jan 2020 – Aug 2024</div>
+                        </div>
+                        <p class="exp-desc">
+                            Led and mentored a team of data scientists delivering production ML platforms for
+                            tax and financial analytics supporting 40+ enterprise clients. Owned system architecture
+                            across modeling, scalable ML APIs, deployment, and MLOps in highly regulated environments.
+                        </p>
+                        <p class="exp-desc" style="margin-top: 1rem;">
+                            Designed human-in-the-loop ML systems with feedback-driven metrics and active learning,
+                            driving sustained cost reduction and operational efficiency. Built end-to-end pipelines
+                            from data ingestion to model deployment, ensuring compliance with enterprise security
+                            and governance standards.
+                        </p>
+                        <p class="exp-desc" style="margin-top: 1rem;">
+                            <strong>Recognition:</strong> EY Ovation Award (FY2022-23, Top 5% performer),
+                            EY Bravo Awards (FY2020-23), AI Challenge Winner (FY2020, FastAI Kaggle competition).
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Applied Science Intern, Seller Lending</div>
+                                <div class="exp-company">Amazon.com</div>
+                            </div>
+                            <div class="exp-date">Summer 2019</div>
+                        </div>
+                        <p class="exp-desc">
+                            Built predictive models to estimate early seller success and risk for automated
+                            lending and loan allocation decisions in Amazon Seller Lending. Developed behavioral
+                            features and comprehensive experimentation pipelines including offline validation,
+                            A/B testing frameworks, and feature attribution analysis.
+                        </p>
+                        <p class="exp-desc" style="margin-top: 1rem;">
+                            Engineered features that ranked in the top decile among ~30K existing features,
+                            demonstrating significant predictive power for seller success metrics.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div>
+                                <div class="exp-title">Data Science Developer</div>
+                                <div class="exp-company">Tata Consultancy Services (TCS)</div>
+                            </div>
+                            <div class="exp-date">Jul 2016 – Jul 2018</div>
+                        </div>
+                        <p class="exp-desc">
+                            Built end-to-end ML/NLP pipelines for client applications, spanning data ingestion,
+                            modeling, evaluation, and API deployment. Developed clinical and pharmaceutical NLP
+                            systems for text classification and domain language understanding using large scientific
+                            corpora.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>Open Source &amp; Research Artifacts</h2>
+                <p class="descriptive-text-large" style="margin-bottom: 3rem;">
+                    Research datasets, benchmarks, and tools shared with the community.
+                    Committed to open science and reproducible research.
+                </p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">PolyBench / PolyLM</h3>
+                        <span class="project-status">Under Review · ACL 2026</span>
+                        <p class="project-desc">
+                            A 125K+ task benchmark for multi-constraint polymer design and synthesis, including
+                            knowledge-augmented reasoning traces and diagnostic evaluation to analyze compositional
+                            reasoning and skill gaps in LLMs.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="https://arxiv.org/abs/2601.16312" class="project-link" target="_blank">Paper →</a>
+                            <span class="project-link" style="opacity: 0.5; cursor: default;">Code (Coming Soon) →</span>
+                            <span class="project-link" style="opacity: 0.5; cursor: default;">Dataset (Coming Soon) →</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">DNIPRO</h3>
+                        <span class="project-status">Published · LREC 2026</span>
+                        <p class="project-desc">
+                            A longitudinal, multinational, and multilingual corpus of 246K+ news articles analyzing
+                            geopolitical narratives and framing shifts across countries during the Russo-Ukrainian War.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="https://lrec.elra.info/lrec2026-main-512" class="project-link" target="_blank">LREC 2026 →</a>
+                            <a href="https://arxiv.org/abs/2601.16309" class="project-link" target="_blank">arXiv →</a>
+                            <span class="project-link" style="opacity: 0.5; cursor: default;">Dataset (Coming Soon) →</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">LHLC: Large Human Language Data Corpus</h3>
+                        <span class="project-status">Technical Report To Be Submitted</span>
+                        <p class="project-desc">
+                            A large-scale corpus of human language data designed to support research on
+                            human-context-aware language models and individual-level language understanding.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <span class="project-link" style="opacity: 0.5; cursor: default;">Dataset (Coming Soon) →</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Research Tools &amp; Utilities</h3>
+                        <p class="project-desc">
+                            Collection of scripts and utilities for ML research workflows—data preprocessing,
+                            evaluation metrics, experiment tracking, and visualization tools.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="https://github.com/dikshyam" class="project-link" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 5rem;">Selected Projects</h2>
+                <p class="descriptive-text-large" style="margin-bottom: 3rem;">
+                    Research projects exploring LLM capabilities, alignment, multimodal learning, and systems design.
+                </p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3 class="project-title">LLM Alignment &amp; Catastrophic Forgetting</h3>
+                        <span class="project-status">Research Project</span>
+                        <p class="project-desc">
+                            Studied sequential fine-tuning effects in GPT-2 (SFT, RLHF), quantifying
+                            catastrophic forgetting and impacts on commonsense reasoning.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="https://github.com/dikshyam/Are-Methods-for-Aligning-LLMs-Prone-to-Catastrophic-Forgetting-", class="project-link" target="_blank">GitHub →</a>
+                            <!-- <span class="project-link" style="opacity: 0.5; cursor: default;">GitHub (Coming Soon) →</span> -->
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Viral Humor Analysis</h3>
+                        <span class="project-status">Research Project</span>
+                        <p class="project-desc">
+                            Characterized humor on Reddit as measurable attributes and analyzed how these
+                            signals drive audience engagement using transformer-based NLP on 500K+ posts.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="https://github.com/dikshyam/Analyzing-Humor-Quality-and-Engagement-Trends-on-Reddit" class="project-link" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">LLaVA 1.5 Adaptive Pruning</h3>
+                        <span class="project-status">Research Project</span>
+                        <p class="project-desc">
+                            Implemented adaptive token pruning strategies in a 7B Vision-Language Transformer
+                            and benchmarked efficiency tradeoffs on VQA-v2, TextVQA, and POPE.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <!-- <span class="project-link" style="opacity: 0.5; cursor: default;">GitHub (Coming Soon) →</span> -->
+                            <a href="https://github.com/dikshyam/Adaptive-Pruning-Strategies" class="project-link" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Commodity Price Forecasting</h3>
+                        <span class="project-status">Research Project</span>
+                        <p class="project-desc">
+                            Built multimodal time-series + NLP models using government reports to predict
+                            oil and gas prices and generate economic explanations.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <a href="https://github.com/dikshyam/Delulu-5-Stage-Pipelined-RISC-V-Processor" class="project-link" target="_blank">GitHub →</a>
+                            <!-- <span class="project-link" style="opacity: 0.5; cursor: default;">GitHub (Coming Soon) →</span> -->
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3 class="project-title">Delulu – RISC-V Processor</h3>
+                        <span class="project-status">Systems Project</span>
+                        <p class="project-desc">
+                            Designed and implemented a RV64IM 5-stage pipelined processor in SystemVerilog
+                            with caching, forwarding, branch prediction, and modular verification.
+                        </p>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                            <!-- <span class="project-link" style="opacity: 0.5; cursor: default;">GitHub (Coming Soon) →</span> -->
+                             <a href="https://github.com/dikshyam/Delulu-5-Stage-Pipelined-RISC-V-Processor" class="project-link" target="_blank">GitHub →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            <p>Built with curiosity and code · © 2026 Dikshya Mohanty</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem; color: #6b7280;">
+                "The best way to predict the future is to invent it." — Alan Kay
+            </p>
+        </footer>
+    </div>
+
+    <div class="scroll-indicator" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </div>
+
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+        🌙
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

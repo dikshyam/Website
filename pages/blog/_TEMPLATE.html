@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Post Title Here · Dikshya Mohanty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .blog-post-content {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        .blog-post-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px dashed var(--border);
+        }
+        
+        .blog-post-title {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--accent);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .blog-post-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .blog-post-content h2 {
+            font-family: var(--serif);
+            font-size: 1.8rem;
+            color: var(--text);
+            margin: 3rem 0 1.5rem 0;
+            position: relative;
+            display: block;
+        }
+        
+        .blog-post-content h2::before {
+            content: '';
+            margin-right: 0;
+        }
+        
+        .blog-post-content h2::after {
+            display: none;
+        }
+        
+        .blog-post-content h3 {
+            font-family: var(--mono);
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .blog-post-content p {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-post-content ul, .blog-post-content ol {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin: 1.5rem 0 1.5rem 2rem;
+        }
+        
+        .blog-post-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-post-content code {
+            background: var(--subtle);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: var(--mono);
+            font-size: 0.9em;
+            color: var(--accent);
+        }
+        
+        .blog-post-content pre {
+            background: var(--subtle);
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 2px solid var(--border);
+        }
+        
+        .blog-post-content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .blog-post-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #64748b;
+        }
+        
+        .blog-post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border: 2px solid var(--border);
+        }
+        
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.6rem 1.2rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 2px 2px 0 var(--subtle);
+            margin-bottom: 3rem;
+        }
+        
+        .back-to-blog:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 3px 3px 0 var(--accent-dim);
+        }
+        
+        .blog-post-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 3px dashed var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="noise"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">DM</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../hobbies.html">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+            
+            <article class="blog-post-content">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">Your Post Title Here</h1>
+                    <div class="blog-post-meta">
+                        <span>📅 Month Year</span>
+                        <span>⏱️ X min read</span>
+                        <span>🏷️ Tags, Go, Here</span>
+                    </div>
+                </header>
+
+                <p>
+                    Your opening paragraph goes here. Make it engaging!
+                </p>
+
+                <h2>Main Section Heading</h2>
+
+                <p>
+                    Your content here. Use paragraphs, lists, code blocks, blockquotes, etc.
+                </p>
+
+                <h3>Subsection</h3>
+
+                <p>More content here.</p>
+
+                <ul>
+                    <li>Bullet point one</li>
+                    <li>Bullet point two</li>
+                    <li>Bullet point three</li>
+                </ul>
+
+                <blockquote>
+                    "A memorable quote or insight goes here."
+                </blockquote>
+
+                <h2>Another Section</h2>
+
+                <p>Keep writing your thoughts.</p>
+
+                <h2>Conclusion</h2>
+
+                <p>
+                    Wrap it up with final thoughts or takeaways.
+                </p>
+
+                <footer class="blog-post-footer">
+                    <p style="color: #64748b; font-size: 0.95rem;">
+                        Have thoughts on this? Reach out at 
+                        <a href="mailto:dimohanty@cs.stonybrook.edu" class="text-link">dimohanty@cs.stonybrook.edu</a>
+                    </p>
+                </footer>
+            </article>
+
+            <a href="../blog.html" class="back-to-blog" style="margin-top: 3rem;">← Back to Blog</a>
+        </div>
+
+        <footer style="margin-top: 6rem;">
+            <p>Built with curiosity and code · © 2026 Dikshya Mohanty</p>
+        </footer>
+    </div>
+
+    <div class="scroll-indicator" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </div>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Industry to PhD: Why I Made the Switch · Dikshya Mohanty</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Crimson+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .blog-post-content {
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        
+        .blog-post-header {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 3px dashed var(--border);
+        }
+        
+        .blog-post-title {
+            font-family: var(--serif);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--accent);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .blog-post-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        
+        .blog-post-content h2 {
+            font-family: var(--serif);
+            font-size: 1.8rem;
+            color: var(--text);
+            margin: 3rem 0 1.5rem 0;
+            position: relative;
+            display: block;
+        }
+        
+        .blog-post-content h2::before {
+            content: '';
+            margin-right: 0;
+        }
+        
+        .blog-post-content h2::after {
+            display: none;
+        }
+        
+        .blog-post-content h3 {
+            font-family: var(--mono);
+            font-size: 1.3rem;
+            color: var(--accent);
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .blog-post-content p {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin-bottom: 1.5rem;
+        }
+        
+        .blog-post-content ul, .blog-post-content ol {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: var(--text);
+            margin: 1.5rem 0 1.5rem 2rem;
+        }
+        
+        .blog-post-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-post-content code {
+            background: var(--subtle);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: var(--mono);
+            font-size: 0.9em;
+            color: var(--accent);
+        }
+        
+        .blog-post-content blockquote {
+            border-left: 4px solid var(--accent);
+            padding-left: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: #64748b;
+        }
+        
+        .back-to-blog {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.95rem;
+            padding: 0.6rem 1.2rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: white;
+            box-shadow: 2px 2px 0 var(--subtle);
+            margin-bottom: 3rem;
+        }
+        
+        .back-to-blog:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 3px 3px 0 var(--accent-dim);
+        }
+        
+        .blog-post-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 3px dashed var(--border);
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="noise"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="../../index.html" class="nav-logo">DM</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../research.html">Research</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+                <li><a href="../blog.html">Blog</a></li>
+                <li><a href="../hobbies.html">Hobbies</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
+            
+            <article class="blog-post-content">
+                <header class="blog-post-header">
+                    <h1 class="blog-post-title">From Industry to PhD: Why I Made the Switch</h1>
+                    <div class="blog-post-meta">
+                        <span>📅 December 2025</span>
+                        <span>⏱️ 6 min read</span>
+                        <span>🏷️ Career, Academia, Personal</span>
+                    </div>
+                </header>
+
+                <p>
+                    In August 2023, I walked away from a comfortable job as a Lead Data Scientist at EY—managing 
+                    teams, working with Fortune 500 clients, earning a good salary—to become a first-year PhD student. 
+                    Everyone thought I was crazy. Here's why I did it and what I've learned so far.
+                </p>
+
+                <h2>The Comfortable Trap</h2>
+
+                <p>
+                    Let me be clear: I loved my job at EY. I was leading projects, mentoring junior data scientists, 
+                    and solving real business problems. The work was impactful, the people were great, and I was 
+                    learning a lot. But somewhere around year three, I noticed something.
+                </p>
+
+                <p>
+                    I was getting <em>really good</em> at building the same kinds of ML systems over and over. 
+                    Each project felt like a variation on a theme. The technical challenges were interesting but 
+                    predictable. I could see exactly what my career would look like in 5, 10, 15 years.
+                </p>
+
+                <blockquote>
+                    "Comfortable isn't always bad. But when comfortable starts feeling like complacent, 
+                    it's time to pay attention."
+                </blockquote>
+
+                <h2>What Changed</h2>
+
+                <p>
+                    Two things happened that made me seriously reconsider:
+                </p>
+
+                <h3>1. The Questions Got More Interesting</h3>
+
+                <p>
+                    In industry, I was answering questions like "How can we predict X to optimize Y?" Important questions, 
+                    sure. But in my free time, I was obsessing over questions like "Why do language models fail at 
+                    compositional reasoning?" and "How can we build evaluation metrics that actually measure understanding?"
+                </p>
+
+                <p>
+                    The questions I found myself drawn to weren't the ones I was being paid to answer.
+                </p>
+
+                <h3>2. The LLM Moment</h3>
+
+                <p>
+                    When GPT-3 came out, then GPT-4, I realized we were at an inflection point. The field was 
+                    moving incredibly fast, and the most interesting work was happening in research labs. I didn't 
+                    want to watch from the sidelines.
+                </p>
+
+                <h2>The Decision</h2>
+
+                <p>
+                    Deciding to leave wasn't easy. Here's what I weighed:
+                </p>
+
+                <h3>What I'd Be Giving Up</h3>
+
+                <ul>
+                    <li>Financial stability and career progression</li>
+                    <li>A senior position with real impact</li>
+                    <li>Mentorship opportunities with my team</li>
+                    <li>The satisfaction of shipping production systems</li>
+                </ul>
+
+                <h3>What I'd Be Gaining</h3>
+
+                <ul>
+                    <li>Time to pursue fundamental research questions</li>
+                    <li>Freedom to explore ideas without immediate ROI concerns</li>
+                    <li>Deep expertise in cutting-edge ML techniques</li>
+                    <li>A community of people asking similar questions</li>
+                </ul>
+
+                <p>
+                    The tipping point was realizing that if I didn't try now, I'd always wonder. I could always 
+                    go back to industry (hopefully with better skills), but the window for starting a PhD felt finite.
+                </p>
+
+                <h2>What I've Learned (So Far)</h2>
+
+                <h3>Industry Experience Was Invaluable</h3>
+
+                <p>
+                    I'm so glad I didn't go straight from undergrad to PhD. Four years in industry taught me:
+                </p>
+
+                <ul>
+                    <li>How to scope problems and actually finish projects</li>
+                    <li>What makes research useful vs. academically interesting</li>
+                    <li>How to work with non-technical stakeholders (great for explaining research)</li>
+                    <li>That perfect is the enemy of done</li>
+                </ul>
+
+                <h3>PhDs Are Different Than I Expected</h3>
+
+                <p>
+                    The hardest parts aren't what I thought they'd be:
+                </p>
+
+                <ul>
+                    <li><strong>Easiest:</strong> The technical work. Industry prepared me well for this.</li>
+                    <li><strong>Hardest:</strong> The ambiguity. No one tells you what to work on. You have to figure it out.</li>
+                    <li><strong>Most surprising:</strong> How collaborative research is. I thought it would be lonely; it's not.</li>
+                </ul>
+
+                <h3>The Tradeoffs Are Real</h3>
+
+                <p>
+                    I won't sugarcoat it—there are costs:
+                </p>
+
+                <ul>
+                    <li>PhD stipend vs. industry salary is... a significant drop</li>
+                    <li>Progress is slower and less tangible than shipping features</li>
+                    <li>Imposter syndrome hits different when surrounded by brilliant researchers</li>
+                    <li>Work-life balance is on you to define (no one enforces it)</li>
+                </ul>
+
+                <h2>Would I Do It Again?</h2>
+
+                <p>
+                    Absolutely. But with caveats. A PhD isn't for everyone, and it's not the only path to doing 
+                    impactful work. It's right for me because:
+                </p>
+
+                <ol>
+                    <li>I genuinely enjoy the research process, even when it's frustrating</li>
+                    <li>The questions I care about require deep, sustained investigation</li>
+                    <li>I have the financial flexibility to make it work</li>
+                    <li>I found an advisor whose research aligns with my interests</li>
+                </ol>
+
+                <h2>Advice If You're Considering the Switch</h2>
+
+                <ul>
+                    <li><strong>Get research experience first</strong> - Do internships, side projects, or collaborations before committing</li>
+                    <li><strong>Be honest about your motivations</strong> - If you just want to learn, there are other ways</li>
+                    <li><strong>Talk to current PhD students</strong> - Ask about the hard parts, not just the exciting parts</li>
+                    <li><strong>Consider your financial situation</strong> - Can you afford the pay cut for 4-6 years?</li>
+                    <li><strong>Think about alternatives</strong> - Research labs, residencies, and industry research roles exist</li>
+                </ul>
+
+                <h2>Final Thoughts</h2>
+
+                <p>
+                    The best career decisions aren't always the most logical ones. Sometimes you have to make the 
+                    choice that feels right, even if you can't fully justify it on a spreadsheet.
+                </p>
+
+                <p>
+                    For me, coming to do a PhD wasn't about titles or prestige. It was about giving myself 
+                    permission to work on problems I find deeply fascinating, even if they don't have immediate 
+                    commercial value.
+                </p>
+
+                <p>
+                    A year and a half in, I don't regret it. Ask me again in three years. 😄
+                </p>
+
+                <footer class="blog-post-footer">
+                    <p style="color: #64748b; font-size: 0.95rem;">
+                        Thinking about making a similar transition? Happy to chat—reach out at 
+                        <a href="mailto:dimohanty@cs.stonybrook.edu" class="text-link">dimohanty@cs.stonybrook.edu</a>
+                    </p>
+                </footer>
+            </article>
+
+            <a href="../blog.html" class="back-to-blog" style="margin-top: 3rem;">← Back to Blog</a>
+        </div>
+
+        <footer style="margin-top: 6rem;">
+            <p>Built with curiosity and code · © 2026 Dikshya Mohanty</p>
+        </footer>
+    </div>
+
+    <div class="scroll-indicator" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        ↑
+    </div>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>
